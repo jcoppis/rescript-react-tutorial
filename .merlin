@@ -7,4 +7,6 @@ B C:\Users\jcoppis\misProyectos\reScript\rescript-react-intro\node_modules\bs-pl
 FLG -w +a-4-9-20-40-41-42-50-61-102
 S C:\Users\jcoppis\misProyectos\reScript\rescript-react-intro\node_modules\@rescript\react\lib\ocaml
 B C:\Users\jcoppis\misProyectos\reScript\rescript-react-intro\node_modules\@rescript\react\lib\ocaml
+S src
+B lib\bs\src
 ####BSB GENERATED: NO EDIT}

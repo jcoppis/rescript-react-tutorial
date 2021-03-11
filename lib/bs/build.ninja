@@ -1,6 +1,21 @@
 rescript = 1
 g_finger := C:\Users\jcoppis\misProyectos\reScript\rescript-react-intro\node_modules\@rescript\react\lib\ocaml\install.stamp
 cleaner = C:\Users\jcoppis\misProyectos\reScript\rescript-react-intro\node_modules\gentype\gentype.exe
+rule astj
+  command = "C:\Users\jcoppis\misProyectos\reScript\rescript-react-intro\node_modules\bs-platform\win32\bsc.exe"  -bs-v 9.0.1 -bs-jsx 3 -bs-super-errors -absname -bs-ast -o $out $i
+o src\App.ast : astj ..\..\src\App.res
+rule deps
+  command = "C:\Users\jcoppis\misProyectos\reScript\rescript-react-intro\node_modules\bs-platform\win32\bsb_helper.exe" -hash 6f75cb7e4dad48fa79dd6e0545bff799 -bs-ns RescriptReactIntro $in
+  restat = 1
+o src\App.d : deps src\App.ast
+rule mij
+  command = "C:\Users\jcoppis\misProyectos\reScript\rescript-react-intro\node_modules\bs-platform\win32\bsc.exe" -bs-ns RescriptReactIntro -I . -I src -I "C:\Users\jcoppis\misProyectos\reScript\rescript-react-intro\node_modules\@rescript\react\lib\ocaml" -bs-super-errors  -bs-gentype C:\Users\jcoppis\misProyectos\reScript\rescript-react-intro\node_modules\gentype\gentype.exe -bs-package-name rescript-react-intro -bs-package-output es6:$in_d:.bs.js -bs-v $g_finger $i
+  dyndep = 1
+  restat = 1
+o src\App-RescriptReactIntro.cmj src\App-RescriptReactIntro.cmi ..\..\src\App.bs.js : mij src\App.ast
+o src\index.ast : astj ..\..\src\index.res
+o src\index.d : deps src\index.ast
+o src\index-RescriptReactIntro.cmj src\index-RescriptReactIntro.cmi ..\..\src\index.bs.js : mij src\index.ast
 rule build_package
   command = "C:\Users\jcoppis\misProyectos\reScript\rescript-react-intro\node_modules\bs-platform\win32\bsc.exe" -w -49 -color always -no-alias-deps  $i
   restat = 1

@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import LogoSvg from "./logo.svg";
+import * as Aoe$RescriptReactIntro from "./Aoe.bs.js";
 
 import './App.css'
 ;
@@ -22,7 +23,7 @@ function App(Props) {
                       href: "https://reactjs.org",
                       rel: "noopener noreferrer",
                       target: "_blank"
-                    }, "Learn React")));
+                    }, "Learn React", React.createElement(Aoe$RescriptReactIntro.make, {}))));
 }
 
 var make = App;

@@ -1,0 +1,7 @@
+rescript = 1
+g_finger := C:\Users\jcoppis\misProyectos\reScript\rescript-react-intro\node_modules\@rescript\react\lib\ocaml\install.stamp
+cleaner = C:\Users\jcoppis\misProyectos\reScript\rescript-react-intro\node_modules\gentype\gentype.exe
+rule build_package
+  command = "C:\Users\jcoppis\misProyectos\reScript\rescript-react-intro\node_modules\bs-platform\win32\bsc.exe" -w -49 -color always -no-alias-deps  $i
+  restat = 1
+o RescriptReactIntro.cmi : build_package RescriptReactIntro.mlmap

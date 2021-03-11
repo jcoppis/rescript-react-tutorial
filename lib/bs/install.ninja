@@ -1,0 +1,9 @@
+rescript = 1
+rule cp
+  command = cmd.exe /C copy /Y $i $out >NUL
+rule touch
+ command = cmd.exe /C type nul >>$out & copy $out+,, >NUL
+o RescriptReactIntro.cmi : cp ..\bs\RescriptReactIntro.cmi
+o RescriptReactIntro.cmj : cp ..\bs\RescriptReactIntro.cmj
+o RescriptReactIntro.cmt : cp ..\bs\RescriptReactIntro.cmt
+build install.stamp : touch RescriptReactIntro.cmi RescriptReactIntro.cmj

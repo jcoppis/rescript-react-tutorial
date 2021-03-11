@@ -1,0 +1,1 @@
+{ "dirs" : [ "src" ] , "pkgs" : [ [ "gentype" , "C:\\Users\\jcoppis\\misProyectos\\reScript\\rescript-react-intro\\node_modules\\gentype" ] , [ "@rescript\\react" , "C:\\Users\\jcoppis\\misProyectos\\reScript\\rescript-react-intro\\node_modules\\@rescript\\react" ] ] , "generated" : [] }

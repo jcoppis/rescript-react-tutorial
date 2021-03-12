@@ -3,7 +3,8 @@ import './Square.css'
 `)
 
 @react.component
-let make = () => {
+let make = (~value) => {
   <button className="square">
+    {value}
   </button>
 }

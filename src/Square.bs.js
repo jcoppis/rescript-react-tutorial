@@ -6,9 +6,10 @@ import './Square.css'
 ;
 
 function Square(Props) {
+  var value = Props.value;
   return React.createElement("button", {
               className: "square"
-            });
+            }, value);
 }
 
 var make = Square;

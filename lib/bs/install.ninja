@@ -3,19 +3,23 @@ rule cp
   command = cmd.exe /C copy /Y $i $out >NUL
 rule touch
  command = cmd.exe /C type nul >>$out & copy $out+,, >NUL
-o Aoe-RescriptReactIntro.cmi : cp ..\bs\src\Aoe-RescriptReactIntro.cmi
-o Aoe-RescriptReactIntro.cmj : cp ..\bs\src\Aoe-RescriptReactIntro.cmj
-o Aoe-RescriptReactIntro.cmt : cp ..\bs\src\Aoe-RescriptReactIntro.cmt
-o Aoe.res : cp ..\..\src\Aoe.res
 o App-RescriptReactIntro.cmi : cp ..\bs\src\App-RescriptReactIntro.cmi
 o App-RescriptReactIntro.cmj : cp ..\bs\src\App-RescriptReactIntro.cmj
 o App-RescriptReactIntro.cmt : cp ..\bs\src\App-RescriptReactIntro.cmt
 o App.res : cp ..\..\src\App.res
+o Board-RescriptReactIntro.cmi : cp ..\bs\src\Board-RescriptReactIntro.cmi
+o Board-RescriptReactIntro.cmj : cp ..\bs\src\Board-RescriptReactIntro.cmj
+o Board-RescriptReactIntro.cmt : cp ..\bs\src\Board-RescriptReactIntro.cmt
+o Board.res : cp ..\..\src\Board.res
 o index-RescriptReactIntro.cmi : cp ..\bs\src\index-RescriptReactIntro.cmi
 o index-RescriptReactIntro.cmj : cp ..\bs\src\index-RescriptReactIntro.cmj
 o index-RescriptReactIntro.cmt : cp ..\bs\src\index-RescriptReactIntro.cmt
 o index.res : cp ..\..\src\index.res
+o Square-RescriptReactIntro.cmi : cp ..\bs\src\Square-RescriptReactIntro.cmi
+o Square-RescriptReactIntro.cmj : cp ..\bs\src\Square-RescriptReactIntro.cmj
+o Square-RescriptReactIntro.cmt : cp ..\bs\src\Square-RescriptReactIntro.cmt
+o Square.res : cp ..\..\src\Square.res
 o RescriptReactIntro.cmi : cp ..\bs\RescriptReactIntro.cmi
 o RescriptReactIntro.cmj : cp ..\bs\RescriptReactIntro.cmj
 o RescriptReactIntro.cmt : cp ..\bs\RescriptReactIntro.cmt
-build install.stamp : touch Aoe-RescriptReactIntro.cmi Aoe-RescriptReactIntro.cmj App-RescriptReactIntro.cmi App-RescriptReactIntro.cmj index-RescriptReactIntro.cmi index-RescriptReactIntro.cmj RescriptReactIntro.cmi RescriptReactIntro.cmj
+build install.stamp : touch App-RescriptReactIntro.cmi App-RescriptReactIntro.cmj Board-RescriptReactIntro.cmi Board-RescriptReactIntro.cmj index-RescriptReactIntro.cmi index-RescriptReactIntro.cmj Square-RescriptReactIntro.cmi Square-RescriptReactIntro.cmj RescriptReactIntro.cmi RescriptReactIntro.cmj

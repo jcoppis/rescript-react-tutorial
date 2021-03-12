@@ -1,1 +1,1 @@
-src\App-RescriptReactIntro.cmj : RescriptReactIntro.cmi src\Aoe-RescriptReactIntro.cmj src\Aoe-RescriptReactIntro.cmi
+src\App-RescriptReactIntro.cmj : RescriptReactIntro.cmi src\Board-RescriptReactIntro.cmj src\Board-RescriptReactIntro.cmi
